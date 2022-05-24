@@ -1,0 +1,66 @@
+footer.footer 
+	.footer__row 
+		.footer__col.footerLeftCol  
+			.footer__left
+				.footerLeftCol__title
+					.footerTitle.footerTitle-left Оставить заявку
+
+				form(action="#").contactForm
+					input(type="text" placeholder="Ваше имя").contactForm__input
+					input(type="text" placeholder="Ваш телефон").contactForm__input
+					.contactForm__check
+						label.checkbox.style-a
+							input(required type="checkbox" name="input-group-radio").contactForm__form-control 
+							.checkbox__checkmark
+							a(href="#").contactForm__link Соглашаюсь с политикой конфиденциальности
+					.button
+						a(href="#") Отправить
+							+icon('arrow-cicle')
+		
+		.footer__col.footerRightCol
+			.footer__right
+				.footerRight__title
+					.footerTitle Контакты
+				.footer__block.blockContacts 
+					.blockContacts__left.blockLeft 
+						a.blockLeft__contact(href="tel:+79009999999") +7 900 999 99 99
+						div
+							a.blockLeft__contact(href="#") mail@mail.ru
+						.blockLeft__contact г ____,ул _____________
+						
+						.blockLeft__wrapp
+							.blockLeft__network
+								a(href="#") 
+									+icon('telega')
+							.blockLeft__network
+								a(href="#") 
+									+icon('whats')
+
+					.blockContacts__right.blockRight 
+						.blockRight__text © My Space, 2022
+						a(href="#").blockRight__text Политика конфиденциальности
+						.blockRight__company
+							a(href="#").blockRight__text Разработано arkada-web.ru
+								+icon('logo')
+	
+
+.popup-fade
+	.popup
+		.popup__container
+			.popup-close
+				a(href="#") 
+					+icon('close-icon')
+			.popup__title Оставить заявку
+			.footer__contactForm.popupForm
+				input.popupForm__inputStyle(type="text" placeholder="Ваше имя")
+				input.popupForm__inputStyle(type="text" placeholder="Ваш телефон")
+				.contactForm__check.contactForm__check-popup
+					label.checkbox.style-a
+						input(required type="checkbox" name="input-group-radio").contactForm__form-control 
+						.checkbox__checkmark
+						a(href="#").contactForm__link Соглашаюсь с политикой конфиденциальности
+					
+					
+				.button.button-popup
+					a(href="#") Отправить
+						+icon('arrow-cicle')

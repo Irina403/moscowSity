@@ -1,0 +1,159 @@
+
+<!--mixin--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>HOME</title>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" media="all" href="styles/main_global.css"/>
+  </head>
+  <body>
+    <header class="header"> 
+      <div class="section_in"> 
+        <div class="header_main"> 
+          <section class="nav wrapp"> 
+            <div class="nav__logo"><a href="#"> 
+                <svg class="icon icon-my-Space ">
+                  <use xlink:href="i/sprite/sprite.svg#my-Space"></use>
+                </svg></a></div>
+            <div class="nav__list"> 
+              <ul class="nav__item">
+                <li> <a href="#">О нас</a></li>
+              </ul>
+              <div class="nav__item"> 
+                <li><a href="#">Преимущества</a></li>
+              </div>
+              <div class="nav__item"> 
+                <li><a href="#">Готовые решения</a></li>
+              </div>
+              <div class="nav__item">
+                <li><a href="#">Все работы</a></li>
+              </div>
+            </div>
+            <div class="nav__tel"> <a href="tel:+70000000000">+7 000 000 00 00</a></div>
+            <div class="nav__button popup-open"><a class="nav__call" href="#">Заказать звонок </a></div>
+          </section>
+        </div>
+      </div>
+    </header>
+    <div class="menuMobileFix"> 
+      <div class="menuMobile">
+        <div class="nav__logo nav__logo-mobile"><a href="#"> 
+            <svg class="icon icon-my-Space ">
+              <use xlink:href="i/sprite/sprite.svg#my-Space"></use>
+            </svg></a></div>
+        <div class="nav__tel nav__tel-mobile"><a href="tel:+70000000000">+7 000 000 00 00</a></div>
+        <div class="menuMobile__wrapp"><a class="menuMobile__trigger" href="#">
+            <svg class="icon icon-burger-icon ">
+              <use xlink:href="i/sprite/sprite.svg#burger-icon"></use>
+            </svg></a>
+          <div class="menuMobile__popup"> <a class="menuMoble__close" href="#"></a></div>
+          <ul class="menuMobile__list"> 
+            <li> <a href="#">О нас</a></li>
+            <li><a href="#">Преимущества</a></li>
+            <li><a href="#">Готовые решения</a></li>
+            <li><a href="#">Все работы</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="base">
+        <section class="home"> 
+          <div class="section_in"> </div>
+        </section>
+      </div>
+      <footer class="footer"> 
+        <div class="footer__row"> 
+          <div class="footer__col footerLeftCol"> 
+            <div class="footer__left">
+              <div class="footerLeftCol__title">
+                <div class="footerTitle footerTitle-left">Оставить заявку</div>
+              </div>
+              <form class="contactForm" action="#">
+                <input class="contactForm__input" type="text" placeholder="Ваше имя">
+                <input class="contactForm__input" type="text" placeholder="Ваш телефон">
+                <div class="contactForm__check">
+                  <label class="checkbox style-a">
+                    <input class="contactForm__form-control" required type="checkbox" name="input-group-radio">
+                    <div class="checkbox__checkmark"></div><a class="contactForm__link" href="#">Соглашаюсь с политикой конфиденциальности</a>
+                  </label>
+                </div>
+                <div class="button"><a href="#">Отправить
+                    <svg class="icon icon-arrow-cicle ">
+                      <use xlink:href="i/sprite/sprite.svg#arrow-cicle"></use>
+                    </svg></a></div>
+              </form>
+            </div>
+          </div>
+          <div class="footer__col footerRightCol">
+            <div class="footer__right">
+              <div class="footerRight__title">
+                <div class="footerTitle">Контакты</div>
+              </div>
+              <div class="footer__block blockContacts"> 
+                <div class="blockContacts__left blockLeft"> <a class="blockLeft__contact" href="tel:+79009999999">+7 900 999 99 99</a>
+                  <div><a class="blockLeft__contact" href="#">mail@mail.ru</a></div>
+                  <div class="blockLeft__contact">г ____,ул _____________</div>
+                  <div class="blockLeft__wrapp">
+                    <div class="blockLeft__network"><a href="#"> 
+                        <svg class="icon icon-telega ">
+                          <use xlink:href="i/sprite/sprite.svg#telega"></use>
+                        </svg></a></div>
+                    <div class="blockLeft__network"><a href="#"> 
+                        <svg class="icon icon-whats ">
+                          <use xlink:href="i/sprite/sprite.svg#whats"></use>
+                        </svg></a></div>
+                  </div>
+                </div>
+                <div class="blockContacts__right blockRight"> 
+                  <div class="blockRight__text">© My Space, 2022</div><a class="blockRight__text" href="#">Политика конфиденциальности</a>
+                  <div class="blockRight__company"><a class="blockRight__text" href="#">Разработано arkada-web.ru
+                      <svg class="icon icon-logo ">
+                        <use xlink:href="i/sprite/sprite.svg#logo"></use>
+                      </svg></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="popup-fade">
+        <div class="popup">
+          <div class="popup__container">
+            <div class="popup-close"><a href="#"> 
+                <svg class="icon icon-close-icon ">
+                  <use xlink:href="i/sprite/sprite.svg#close-icon"></use>
+                </svg></a></div>
+            <div class="popup__title">Оставить заявку</div>
+            <div class="footer__contactForm popupForm">
+              <input class="popupForm__inputStyle" type="text" placeholder="Ваше имя">
+              <input class="popupForm__inputStyle" type="text" placeholder="Ваш телефон">
+              <div class="contactForm__check contactForm__check-popup">
+                <label class="checkbox style-a">
+                  <input class="contactForm__form-control" required type="checkbox" name="input-group-radio">
+                  <div class="checkbox__checkmark"></div><a class="contactForm__link" href="#">Соглашаюсь с политикой конфиденциальности</a>
+                </label>
+              </div>
+              <div class="button button-popup"><a href="#">Отправить
+                  <svg class="icon icon-arrow-cicle ">
+                    <use xlink:href="i/sprite/sprite.svg#arrow-cicle"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js"><\/script>')</script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+    <script>window.TweenMax || document.write('<script src="js/gsap.min.js"><\/script>')</script>
+    <script type="text/javascript">window.productionStatus = 'development';</script>
+    <script src="js/libs.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
