@@ -9,17 +9,19 @@ $footer_mob: 10rem;
 
 //---------------------------------------------fonts
 $font_path: "../fonts/";
-$font_1: 'Roboto', sans-serif;
-$font_2: 'Robotolight', sans-serif;
-$font_3: 'akzidenzgroteskpro-ext', serif;
+$font_1: 'Montserrat-Bold', sans-serif;
+$font_2: 'Montserrat-Italic', sans-serif;
+$font_3: 'Montserrat-Regular', serif;
 $font_size_base: 1.8rem;
 //---------------------------------------------fonts###
 
 //---------------------------------------------colors
 $white: #fff;
 $black: #232323;
-$gray:  #c2c2c2;
+$gray:  #272727;
 $gold: #F1D465;
+$button: #021231;
+
 
 $color_text_base: $black;
 $color_link_base: $black;
@@ -36,14 +38,6 @@ $z-index: (
 
 //---------------------------------------------layout
 $page_width: 1920px;
-
-// $wrapp: (
-// 	width: 100%,
-// 	max-width: 1720px,
-// 	padding-left: 100px,
-// 	padding-right: 100px
-	
-// 	);
 //---------------------------------------------layout###
 
 //---------------------------------------------global values

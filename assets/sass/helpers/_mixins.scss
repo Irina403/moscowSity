@@ -243,17 +243,30 @@
 	align-items: center;
 }
 
-
+@mixin wrap{
+	width: 100%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+	}
 
 // btn
 
 @mixin btn {
-	a {
-		font-size: 3.5rem;
-		line-height: 45px;
-		font-family: $font_3;
-		font-weight: 400;
-		color: $black;
-		display: flex;
-	}
+	width: 28rem;
+	height: 7rem;
+	background: $button;
+	color: #fff;
+	border-radius:1rem;
+	font-size: 3rem;
+}
+
+@mixin text1 {
+	font-size: 3rem;
+	font-family: $font_1;
+	text-transform: uppercase;
+	color: #fff;
 }
