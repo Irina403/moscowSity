@@ -5,7 +5,8 @@
 }
 .header_main {
     top: 15px;
-    width: 100%;
+    right: 0;
+    left: 0;
     position: absolute;
 }
 .nav__logo{
@@ -41,6 +42,10 @@
     &__text{
         width: 52%;
         text-align: center;
+        @include bp ($point_5){
+            width: 100%;
+        }
+        
     } 
     &__desc{
         margin-top: 10rem;
@@ -50,6 +55,12 @@
         font-size: 1.8rem;
         font-family: $font_2;
         text-transform: none;
+        @include bp ($point_5){
+            width: 80%; 
+        }
+        @include bp ($point_6){
+            font-size: 1.6rem;
+        }
     
         &-down{
             margin-top: 3.4rem;
@@ -70,6 +81,9 @@
 
 .tilte-block{
     @include text1;
+    @include bp ($point_6){
+        font-size: 2.2rem;
+    }
 }
 .advantages{
     margin-top: 11rem;
@@ -78,12 +92,34 @@
     flex-direction: column;
     align-items:center;
     justify-content: center;
+    @include bp ($point_1){
+        margin-top: 20rem;
+    }
     &__back-text{
-        top:-26%;
-        right: 38%;
+        top:-24%;
+        right: 35%;
         position: absolute;
         font-size: 10rem;
         color: rgba(255, 254, 254, 0.1);
+        @include bp ($point_2){
+            top: -15%;
+            font-size: 6rem;
+        }
+        @include bp ($point_3){
+            right: 25%;
+        }
+        @include bp ($point_5){
+            font-size: 4rem;
+            top: -10%;
+            right: 30%;
+        }
+        @include bp ($point_6){
+            font-size: 3rem;
+            left: 0;
+            right: 0;
+        }
+
+       
     }
     &__text{
         width: 90rem;
@@ -91,6 +127,15 @@
         font-family: $font_2;
         text-transform: none;
         padding-bottom: 7rem;
+        @include bp ($point_3){
+            width: 70rem;
+        }
+        @include bp ($point_5){
+            width: 50rem;
+        }
+        @include bp ($point_6){
+            width: 40rem;
+        }
     }
 }
 
@@ -99,6 +144,7 @@
     background-image:url(../i/background2.png);
     background-size:cover;
     background-repeat:no-repeat;
+    background-position:center;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -108,6 +154,12 @@
         margin-bottom: 5rem;
         width: 103rem;
         @include text1; 
+        @include bp ($point_5){
+            width: 50rem;
+        }
+        @include bp ($point_6){
+            width: 40rem;
+        }
     }
 }
 .about-me{
@@ -121,6 +173,16 @@
         font-size: 10rem;
         color: #868B9A;
         text-transform: uppercase;
+        @include bp ($point_3){
+            top: 0rem;
+            font-size: 6rem;
+            text-align: center;
+            left: 0;
+            right: 0;
+        }
+        @include bp ($point_6){
+            font-size: 4.2rem;
+        }
     }
     &__content{
         padding-top: 15rem;
@@ -129,6 +191,9 @@
         flex-direction: column;
         justify-content: center;
         align-items:center;
+        @include bp ($point_3){
+            padding-top: 10rem;
+        }
     }
     &__title{
         @include text1;
@@ -140,8 +205,169 @@
         text-align: center;
         font-size: 2.4rem;
         font-family: $font_2;
+        @include bp ($point_3){
+            font-size: 1.8rem;
+            width: 80rem;
+        }
+        @include bp ($point_5){
+            width: 55rem;
+        }
+        @include bp ($point_5){
+            font-size: 1.6rem;
+        }
+        @include bp ($point_6){
+            width: 35rem;
+        }
     }
     &__button{
         margin-bottom: 12rem;
+        @include bp ($point_3){
+            margin-bottom: 9rem;
+        }
+        @include bp ($point_6){
+            margin-top: 4rem;
+            width: 100%;
+        }
     }
+}
+
+.donation {
+    background-image:url(../i/footer-back.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    height: 82rem;
+    @include bp ($point_5){
+        background-position:top;
+     }
+    &__block{
+        margin-top: 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 32rem;
+        @include bp ($point_5){
+            width: 60rem;
+        }
+    }
+    &__title{
+        padding-top: 10rem;
+        font-size: 7.2rem;
+        @include bp ($point_3){
+            font-size: 6.2rem;
+         }
+        @include bp ($point_5){
+           padding-top: 0rem;
+           font-size: 5rem;
+        }
+        @include bp ($point_6){
+            font-size: 3.2rem;
+            padding-top: 5rem;
+        }
+    }
+    &__wrapp{
+        @include wrap;
+    }
+    &__info{
+        @include text1;
+        text-align: left;
+        font-family: $font_3;
+        font-weight: 400;
+        &-bold{
+            font-family: $font_1;
+            font-weight: 700;
+        }
+        @include bp ($point_6){
+            font-size: 2rem;
+        }
+    }
+    &__text{
+        font-size: 1.8rem;
+        font-family: $font_3;
+        color:#fff;
+        width: 58rem;
+        @include bp ($point_5){
+           width: 40rem;
+         }
+    }
+}
+
+.footer {
+    padding-top: 8rem;
+    background-color:#000;
+    &__row {
+        @include wrap;
+        display: flex;
+        // justify-content: space-between;
+        // align-items:center;
+    }
+    &__col{
+        width: 100%;
+    }
+    &__text{
+        width: 45rem;
+        font-size: 1.8rem;
+        text-align: right;
+        color:#fff;
+        font-family: $font_3;
+        @include bp ($point_3){
+           text-align: left;
+           margin-left: 14%;
+        }
+        @include bp ($point_5){
+            margin-left: 0%;
+     }
+     @include bp ($point_3){
+       margin-top: 5rem;
+       text-align: center;
+
+    }
+    }
+    &__copyright{
+        font-size: 1.2rem;
+        font-family: $font_3;
+        color: #666666;
+        text-align: center;
+        padding-bottom: 7rem;
+    }
+    
+}
+.messageBlock{
+    &__link{
+        color:#fff;
+        font-size: 3rem;
+        font-family: $font_1;
+        font-weight: 400;
+        @include bp ($point_5){
+           font-size: 2.2rem;
+    }
+    }
+    &__wrapp{
+        width: 100%;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        @include bp ($point_3){
+            flex-wrap: wrap;
+
+        }
+    }
+
+}
+.messageBlock__wrapp {
+    @include bp ($point_3){
+        width: 100%;
+}
+}
+.messageBlock a{
+    display: flex;
+    align-items:center;
+    @include bp ($point_3){
+      justify-content: center;
+}
+@include bp ($point_6){
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
 }
